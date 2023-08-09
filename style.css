@@ -1,0 +1,39 @@
+@font-face {
+    font-family: customFont;
+    src: url(./font.ttf);
+}
+html, body {
+
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.contents {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+.imagebar {
+    background-image: url(./background.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 35vw;
+    font-family: customFont, sans-serif;
+}
+
+.main-form{
+    height: 100vh;
+    width: 65vw;
+    color: white;
+    background-color: rgb(38,61,71);
+}
+
+.form{
+    font-family: sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+}
