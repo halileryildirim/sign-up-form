@@ -21,23 +21,40 @@
             <div class="placeholder-text">
                 <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams</p>
                 <p>Sign up <em>now</em> to get started.</p>
-                <p class="gapped-ftext">You <em>know</em> you want to.</p>
-                <p class="gapped-stext">Lets do this!</p>
             </div>
-            <form>
-                <label for="first-name">FIRST NAME</label>
-                <input type="text" id="first-name" name="first-name" required>
-                <label for="last-name">LAST NAME</label>
-                <input type="text" id="last-name" name="last-name" required>
-                <label for="mail">EMAIL</label>
-                <input type="email" name="mail" id="mail" required>
-                <label for="pwd">PASSWORD</label>
-                <input type="password" id="pwd" name="password" required>
-                <label for="confirm-pwd">CONFIRM PASSWORD</label>
-                <input type="password" id="confirm-pwd" name="confirm-pwd">
-
-                <button type="submit">CREATE ACCOUNT</button>
+            <p class="gapped-ftext">You <em>know</em> you want to.</p>
+            <p class="gapped-stext">Lets do this!</p>
+            <form id="my-form">
+                <fieldset class="left-fieldset">
+                    <div>
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" name="first-name" placeholder="Your first name" required>
+                    </div>
+                    <div>
+                        <label for="mail">EMAIL</label>
+                        <input type="email" name="mail" id="mail" placeholder="Your email" required>
+                    </div>
+                    <div>
+                        <label for="pwd">PASSWORD</label>
+                        <input type="password" id="pwd" name="password" placeholder="Not a real password" required>
+                    </div>
+                </fieldset>
+                <fieldset class="right-fieldset">
+                    <div>
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="Your last name" required>
+                    </div>
+                    <div>                    
+                        <label for="tel">PHONE NUMBER</label>
+                        <input type="tel" id="tel" name="phone-number" placeholder="Your phone number" required></div>
+                    <div>
+                        <label for="confirm-pwd">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm-pwd" name="confirm-pwd" placeholder="Confirm your fake password" required>
+                    </div>
+                </fieldset>
+                
             </form>
+            <button type="submit" form="my-form">CREATE ACCOUNT</button>
         </div>
     </div>
 

@@ -23,17 +23,64 @@ html, body {
     height: 100vh;
     width: 35vw;
     font-family: customFont, sans-serif;
+    color: white;
 }
 
 .main-form{
+    padding: 0 5rem;
     height: 100vh;
     width: 65vw;
     color: white;
     background-color: rgb(38,61,71);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 60px;
 }
 
-.form{
-    font-family: sans-serif;
+p{
+    font-size: 40px;
+    color: rgb(194,221,219);
+}
+
+p + p {
+    margin-bottom: 0;
+}
+
+form{
     display: flex;
     flex-wrap: wrap;
+    gap: 64px;
+   
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    border: none;
+    flex: 1;
+    padding: 0;
+}
+
+input {
+    background-color: transparent;
+    border: 2px rgb(194,221,219) solid;
+    border-radius: 5px;
+
+    font-size: 24px;
+    color: rgb(194,221,219);
+    padding: 4px;
+    margin: 0;
+    width: 100%;
+}
+
+button{
+    align-self: flex-start;
+    padding: 4px;
+    background-color: rgb(210,214,204);
+    border: none;
 }
