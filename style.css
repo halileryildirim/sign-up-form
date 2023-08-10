@@ -24,6 +24,8 @@ html, body {
     width: 35vw;
     font-family: customFont, sans-serif;
     color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .main-form{
@@ -39,19 +41,16 @@ html, body {
 }
 
 p{
-    font-size: 40px;
+    font-size: 30px;
     color: rgb(194,221,219);
-}
-
-p + p {
-    margin-bottom: 0;
+    text-align: start;
 }
 
 form{
     display: flex;
     flex-wrap: wrap;
     gap: 64px;
-   
+    background-color: rgb(27, 42, 49);
 }
 label {
     display: block;
@@ -60,7 +59,7 @@ label {
 fieldset{
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 50px;
     border: none;
     flex: 1;
     padding: 0;
@@ -80,7 +79,25 @@ input {
 
 button{
     align-self: flex-start;
-    padding: 4px;
+    padding: 20px;
     background-color: rgb(210,214,204);
     border: none;
+    border-radius: 10px;
+}
+
+.placeholder-text {
+    margin-top: 200px;
+}
+
+.logo-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+.odin-logo {
+    width: 150px;
+    height: 150px;
+    align-self: center;
+    opacity: 100%;
 }
