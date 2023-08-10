@@ -2,6 +2,7 @@
     font-family: customFont;
     src: url(./font.ttf);
 }
+
 html, body {
 
     margin: 0;
@@ -26,10 +27,10 @@ html, body {
     color: white;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .main-form{
-    padding: 0 5rem;
     height: 100vh;
     width: 65vw;
     color: white;
@@ -37,7 +38,7 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding-left: 60px;
+    
 }
 
 p{
@@ -47,15 +48,19 @@ p{
 }
 
 form{
+    padding: 2rem 5rem;
     display: flex;
     flex-wrap: wrap;
     gap: 64px;
-    background-color: rgb(27, 42, 49);
+    background-color: rgb(27,42,49);
+
 }
+
 label {
     display: block;
     margin-bottom: 10px;
 }
+
 fieldset{
     display: flex;
     flex-direction: column;
@@ -83,10 +88,24 @@ button{
     background-color: rgb(210,214,204);
     border: none;
     border-radius: 10px;
+    margin: 0 5rem;
 }
 
 .placeholder-text {
     margin-top: 200px;
+    padding: 0 5rem;
+}
+
+.gapped-ftext, .gapped-stext {
+    padding: 0 5rem;
+}
+
+.gapped-ftext{ 
+    margin-top: 0;
+}
+
+.gapped-stext{ 
+    margin-bottom: 0;
 }
 
 .logo-section{
@@ -94,10 +113,23 @@ button{
     justify-content: center;
     align-items: center;
     gap: 24px;
+    flex: 1;
 }
 .odin-logo {
     width: 150px;
     height: 150px;
     align-self: center;
-    opacity: 100%;
+}
+
+.imagebar > p {
+    flex: 1;
+    font-size: 8px;
+    color: white;
+    align-items: flex-end;
+    align-content: end;
+}
+
+a {
+    text-decoration: underline;
+    color: white;
 }
