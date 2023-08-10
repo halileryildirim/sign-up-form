@@ -102,6 +102,8 @@ button{
     font-size: 30px;
     color: rgb(194,221,219);
     padding: 0 5rem;
+    position: relative;
+    top: 10%;
 }
 
 .logo-section{
@@ -151,9 +153,4 @@ button:hover {
 
 .login {
     padding: 0 5rem;
-}
-
-.gapped-stext {
-    position: relative;
-    top: 10%;
 }
