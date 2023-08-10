@@ -141,15 +141,15 @@ a {
     color: white;
 }
 
-input:hover {
-    border-color: rgb(194,221,219);
-}
-
 button:hover {
     background-color: rgba(37, 71, 37, 0.76);
     outline: 0.5px solid black;
     color: white;
     
+}
+
+input:hover {
+    border-color: rgb(194,221,219);
 }
 
 .login {
