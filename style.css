@@ -10,37 +10,9 @@ html, body {
     height: 100vh;
 }
 
-.contents {
-    display: flex;
-    flex: 1;
-    flex-direction: row;
+h1 {
+    font-size: 50px;
 }
-
-.imagebar {
-    background-image: url(./background.jpg);
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 35vw;
-    font-family: customFont, sans-serif;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.main-form{
-    height: 100vh;
-    width: 65vw;
-    color: white;
-    background-color: rgb(38,61,71);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-
-}
-
 
 form{
     padding: 5rem;
@@ -50,7 +22,7 @@ form{
     flex-wrap: wrap;
     gap:64px;
     background-color: rgb(27,42,49);
-    box-shadow: 0 10px 50px rgb(98, 131, 146) inset;
+    box-shadow: 0 10px 25px rgb(98, 131, 146);
     border-radius: 5px;
 
 }
@@ -90,20 +62,69 @@ button{
     margin: 0 5rem;
 }
 
+a {
+    text-decoration: underline;
+    color: white;
+}
+
+button:hover {
+    background-color: rgba(37, 71, 37, 0.76);
+    outline: 0.5px solid black;
+    color: white;
+    
+}
+
+input:hover {
+    border-color: rgb(194,221,219);
+}
+
+.contents {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+.imagebar {
+    background-image: url(./background.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 35vw;
+    font-family: customFont, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.main-form{
+    height: 100vh;
+    width: 65vw;
+    color: white;
+    background-color: rgb(38,61,71);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
 .placeholder-text {
-    margin-top: 200px;
+    margin-top: 50px;
     padding: 0 5rem;
     color: rgb(194,221,219);
-    font-size: 30px;
+    font-size: 24px;
+    position: relative;
+    top: 5%
 }
 
 .gapped-stext{ 
     margin-bottom: 0;
-    font-size: 30px;
+    font-size: 24px;
     color: rgb(194,221,219);
     padding: 0 5rem;
     position: relative;
-    top: 10%;
+    top: 15%;
 }
 
 .logo-section{
@@ -124,8 +145,9 @@ button{
     position:relative;
     bottom: 25%;
 }
+
 .odin-logo {
-    width: 150px;
+    width: 100px;
     height: 150px;
 }
 
@@ -134,22 +156,6 @@ button{
     font-size: 10px;
     color: white;
     margin-left: 0.5rem;
-}
-
-a {
-    text-decoration: underline;
-    color: white;
-}
-
-button:hover {
-    background-color: rgba(37, 71, 37, 0.76);
-    outline: 0.5px solid black;
-    color: white;
-    
-}
-
-input:hover {
-    border-color: rgb(194,221,219);
 }
 
 .login {
