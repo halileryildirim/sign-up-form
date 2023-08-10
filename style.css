@@ -17,7 +17,6 @@ h1 {
 form{
     padding: 5rem;
     padding-top: 10rem;
-    
     display: flex;
     flex-wrap: wrap;
     gap:64px;
@@ -140,7 +139,7 @@ input:hover {
     gap: 24px;
     justify-content: center;
     width: 100%;
-    background-color: rgba(37, 71, 37, 0.411);
+    background-color: rgba(38, 49, 48, 0.411);
     padding: 2rem;
     position:relative;
     bottom: 25%;
