@@ -4,7 +4,7 @@
 }
 
 html, body {
-
+    font-family: sans-serif;
     margin: 0;
     width: 100vw;
     height: 100vh;
@@ -38,21 +38,20 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
+
 }
 
-p{
-    font-size: 30px;
-    color: rgb(194,221,219);
-    text-align: start;
-}
 
 form{
-    padding: 2rem 5rem;
+    padding: 5rem;
+    padding-top: 10rem;
+    
     display: flex;
     flex-wrap: wrap;
-    gap: 64px;
+    gap:64px;
     background-color: rgb(27,42,49);
+    box-shadow: 0 10px 50px rgb(98, 131, 146) inset;
+    border-radius: 5px;
 
 }
 
@@ -68,13 +67,13 @@ fieldset{
     border: none;
     flex: 1;
     padding: 0;
+    width: 50%;
 }
 
 input {
     background-color: transparent;
-    border: 2px rgb(194,221,219) solid;
+    border: 2px rgb(141, 170, 168) solid;
     border-radius: 5px;
-
     font-size: 24px;
     color: rgb(194,221,219);
     padding: 4px;
@@ -85,7 +84,7 @@ input {
 button{
     align-self: flex-start;
     padding: 20px;
-    background-color: rgb(210,214,204);
+    background-color: rgb(141, 170, 168);
     border: none;
     border-radius: 10px;
     margin: 0 5rem;
@@ -94,42 +93,67 @@ button{
 .placeholder-text {
     margin-top: 200px;
     padding: 0 5rem;
-}
-
-.gapped-ftext, .gapped-stext {
-    padding: 0 5rem;
-}
-
-.gapped-ftext{ 
-    margin-top: 0;
+    color: rgb(194,221,219);
+    font-size: 30px;
 }
 
 .gapped-stext{ 
     margin-bottom: 0;
+    font-size: 30px;
+    color: rgb(194,221,219);
+    padding: 0 5rem;
 }
 
 .logo-section{
     display: flex;
-    justify-content: center;
+    flex: 1;
+    align-items: center;
+    
+}
+
+.logo {
+    display: flex;
     align-items: center;
     gap: 24px;
-    flex: 1;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(37, 71, 37, 0.411);
+    padding: 2rem;
+    position:relative;
+    bottom: 25%;
 }
 .odin-logo {
     width: 150px;
     height: 150px;
-    align-self: center;
 }
 
-.imagebar > p {
-    flex: 1;
-    font-size: 8px;
+.image-ownership > p{
+    flex: 2;
+    font-size: 10px;
     color: white;
-    align-items: flex-end;
-    align-content: end;
+    margin-left: 0.5rem;
 }
 
 a {
     text-decoration: underline;
     color: white;
+}
+
+input:hover {
+    border-color: rgb(194,221,219);
+}
+
+button:hover {
+    background-color: rgba(37, 71, 37, 0.76);
+    color: white;
+    outline: 0.5px solid black;
+}
+
+.login {
+    padding: 0 5rem;
+}
+
+.gapped-stext {
+    position: relative;
+    top: 10%;
 }
