@@ -147,8 +147,9 @@ input:hover {
 
 button:hover {
     background-color: rgba(37, 71, 37, 0.76);
-    color: white;
     outline: 0.5px solid black;
+    color: white;
+    
 }
 
 .login {
